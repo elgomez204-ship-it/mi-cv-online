@@ -1,0 +1,258 @@
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.cv-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(135deg, #2c3e50, #4a6491);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 1.1rem;
+}
+
+.contact-info i {
+    margin-right: 8px;
+    color: #3498db;
+}
+
+.cv-content {
+    padding: 30px;
+}
+
+.section {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.section:last-of-type {
+    border-bottom: none;
+}
+
+.section h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section h2 i {
+    color: #3498db;
+}
+
+.section h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin: 20px 0 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section h3 i {
+    color: #3498db;
+    font-size: 1.1rem;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 25px;
+}
+
+.experience-item h3, .education-item h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.company, .education-period {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.company {
+    color: #3498db;
+    font-weight: 500;
+}
+
+.skills-description {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Estilos para habilidades técnicas */
+.technical-skills {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.skill-tag {
+    background: #e3f2fd;
+    color: #1565c0;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: #1565c0;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.tech-tag {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid #c8e6c9;
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    background: #2e7d32;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(46, 125, 50, 0.2);
+}
+
+.tech-tag.advanced {
+    background: #fff3e0;
+    color: #ef6c00;
+    border-color: #ffe0b2;
+}
+
+.tech-tag.advanced:hover {
+    background: #ef6c00;
+    color: white;
+    box-shadow: 0 4px 8px rgba(239, 108, 0, 0.2);
+}
+
+.footer {
+    background: #ecf0f1;
+    text-align: center;
+    padding: 15px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .cv-content {
+        padding: 20px;
+    }
+    
+    .skills {
+        justify-content: center;
+    }
+    
+    .section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .technical-skills {
+        padding: 15px;
+    }
+    
+    .tech-tag, .skill-tag {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Animación sutil para los tags */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.skill-tag, .tech-tag {
+    animation: fadeIn 0.5s ease forwards;
+}
